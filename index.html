@@ -1,8 +1,100 @@
-<?php require 'pages/header.php' ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M Sahirullah | Protfolio</title>
+
+
+    <link rel="icon" href="/public/img/icon.png">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillatoasts@1.4.0/vanillatoasts.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/social.css">
+    <link rel="stylesheet" href="/public/css/modal.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Scripts -->
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js" integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillatoasts@1.4.0/vanillatoasts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/public/js/common.js"></script>
+
+</head>
 
 <body class="home-page">
     <!-- Navbar -->
-    <?php require 'pages/navbar.php' ?>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="laoding-div">
+            <div class="loader">
+            </div>
+        </div>
+
+        <div class="container py-2 ">
+            <a class="navbar-brand fw-bold " href="/">
+                #MSahirullah
+            </a>
+
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarButtonsExample">
+                <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" id="homeNav" href="/#home">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="/#about-me" id="aboutmeNav">About Me</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="/#projects" id="projectsNav">Projects</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="/#contact-me" id="contactmeNav">Contact Me</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center social-icons">
+                    <a class="nav-link icon-btn" target="_blank" href="https://www.linkedin.com/in/mohomed-sahirullah-3184b8141/">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                    </a>
+                    <a class="nav-link icon-btn" target="_blank" href="https://github.com/MSahirullah">
+                        <i class="fa-brands fa-github icon"></i>
+                    </a>
+                    <a class="nav-link icon-btn me-0" target="_blank" href="https://twitter.com/M_Sahirullah">
+                        <i class="fa-brands fa-twitter icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- End Navabar -->
 
     <!-- Home -->
@@ -235,15 +327,15 @@
                 <div class="mt-3 d-flex flex-row justify-content-between flex-wrap project-div">
                     <div class="card big-card" style="width: 46rem;">
                         <div class="bg-image" data-mdb-ripple-color="light">
-                            <a href="/pages/projects/fitness-first-gym.php">
+                            <a href="/pages/projects/fitness-first-gym.html">
                                 <img src="/public/img/projects/fitness-first-gym.jpg" class="img-fluid lg-img" style="width:100%" alt="FITNESS FIRST GYM" /></a>
                         </div>
                         <div class="card-body text-center position-relative">
-                            <h5><a href="/pages/projects/fitness-first-gym.php" class="card-title"> FITNESS FIRST GYM</a></h5>
+                            <h5><a href="/pages/projects/fitness-first-gym.html" class="card-title"> FITNESS FIRST GYM</a></h5>
                             <p class="card-text">Fitness First Gym Web and App helps gym managers to organize and track their income, and manage members and payments</p>
                             <div class="position-relative overflow-hidden mb-1 mt-2">
-                                <a class="card-text2 link1" href="/pages/projects/fitness-first-gym.php"> Web Development </a>
-                                <a class="card-text2 link2" href="/pages/projects/fitness-first-gym.php"> Show Project </a>
+                                <a class="card-text2 link1" href="/pages/projects/fitness-first-gym.html"> Web Development </a>
+                                <a class="card-text2 link2" href="/pages/projects/fitness-first-gym.html"> Show Project </a>
                                 <div class="hidden-div">
                                 </div>
                             </div>
@@ -251,14 +343,14 @@
                     </div>
                     <div class="card">
                         <div class="bg-image" data-mdb-ripple-color="light">
-                            <a href="/pages/projects/lak-market.php"><img src="/public/img/projects/lak-market.jpg" class="img-fluid" alt="LAK MARKET" /></a>
+                            <a href="/pages/projects/lak-market.html"><img src="/public/img/projects/lak-market.jpg" class="img-fluid" alt="LAK MARKET" /></a>
                         </div>
                         <div class="card-body text-center">
-                            <h5><a href="/pages/projects/lak-market.php" class="card-title">LAK MARKET</a> </h5>
+                            <h5><a href="/pages/projects/lak-market.html" class="card-title">LAK MARKET</a> </h5>
                             <p class="card-text">Master market to connect sellers and customers (Web-platform)</p>
                             <div class="overflow-hidden mb-1 mt-2">
-                                <a class="card-text2 link1" href="/pages/projects/lak-market.php"> Web Development </a>
-                                <a class="card-text2 link2" href="/pages/projects/lak-market.php"> Show Project </a>
+                                <a class="card-text2 link1" href="/pages/projects/lak-market.html"> Web Development </a>
+                                <a class="card-text2 link2" href="/pages/projects/lak-market.html"> Show Project </a>
                                 <div class="hidden-div">
                                 </div>
                             </div>
@@ -266,14 +358,14 @@
                     </div>
                     <div class="card">
                         <div class="bg-image" data-mdb-ripple-color="light">
-                            <a href="/pages/projects/smart-covid-assist.php"><img src="/public/img/projects/smart-covid-assist.jpg" class="img-fluid" alt="SMART COVID ASSIST" /></a>
+                            <a href="/pages/projects/smart-covid-assist.html"><img src="/public/img/projects/smart-covid-assist.jpg" class="img-fluid" alt="SMART COVID ASSIST" /></a>
                         </div>
                         <div class="card-body text-center">
-                            <h5><a href="/pages/projects/smart-covid-assist.php" class="card-title">SMART COVID ASSIST</a> </h5>
+                            <h5><a href="/pages/projects/smart-covid-assist.html" class="card-title">SMART COVID ASSIST</a> </h5>
                             <p class="card-text">Covid-19 quarantine patients and contacts monitoring system using the mobile app in an IoT environment</p>
                             <div class="overflow-hidden mb-1 mt-2">
-                                <a class="card-text2 link1" href="/pages/projects/smart-covid-assist.php"> Web Development </a>
-                                <a class="card-text2 link2" href="/pages/projects/smart-covid-assist.php"> Show Project </a>
+                                <a class="card-text2 link1" href="/pages/projects/smart-covid-assist.html"> Web Development </a>
+                                <a class="card-text2 link2" href="/pages/projects/smart-covid-assist.html"> Show Project </a>
                                 <div class="hidden-div" style="height: 3.5rem;">
                                 </div>
                             </div>
@@ -281,14 +373,14 @@
                     </div>
                     <div class="card">
                         <div class="bg-image" data-mdb-ripple-color="light">
-                            <a href="/pages/projects/best-food-app.php"><img src="/public/img/projects/best-food-app.jpg" class="img-fluid" alt="BEST FOOD APP" /></a>
+                            <a href="/pages/projects/best-food-app.html"><img src="/public/img/projects/best-food-app.jpg" class="img-fluid" alt="BEST FOOD APP" /></a>
                         </div>
                         <div class="card-body text-center">
-                            <h5><a href="/pages/projects/best-food-app.php" class="card-title">BEST FOOD APP</a> </h5>
+                            <h5><a href="/pages/projects/best-food-app.html" class="card-title">BEST FOOD APP</a> </h5>
                             <p class="card-text">Best Food App connects users with local restaurants and provides a convenient way to order and receive meals from their favorite establishments</p>
                             <div class="overflow-hidden mb-1 mt-2">
-                                <a class="card-text2 link1" href="/pages/projects/best-food-app.php"> App Development </a>
-                                <a class="card-text2 link2" href="/pages/projects/best-food-app.php"> Show Project </a>
+                                <a class="card-text2 link1" href="/pages/projects/best-food-app.html"> App Development </a>
+                                <a class="card-text2 link2" href="/pages/projects/best-food-app.html"> Show Project </a>
                                 <div class="hidden-div">
                                 </div>
                             </div>
@@ -296,14 +388,14 @@
                     </div>
                     <div class="card">
                         <div class="bg-image" data-mdb-ripple-color="light">
-                            <a href="/pages/projects/get-fuel-app.php"><img src="/public/img/projects/get-fuel-app.jpg" class="img-fluid" alt="GET FUEL APP" /></a>
+                            <a href="/pages/projects/get-fuel-app.html"><img src="/public/img/projects/get-fuel-app.jpg" class="img-fluid" alt="GET FUEL APP" /></a>
                         </div>
                         <div class="card-body text-center">
-                            <h5><a href="/pages/projects/get-fuel-app.php" class="card-title">GET FUEL APP</a> </h5>
+                            <h5><a href="/pages/projects/get-fuel-app.html" class="card-title">GET FUEL APP</a> </h5>
                             <p class="card-text">Due to the economic and fuel crisis happened in Sri Lanka in 2022, a conceptual app was developed to manage fuel procurement through a QR code</p>
                             <div class="overflow-hidden mb-1 mt-2">
-                                <a class="card-text2 link1" href="/pages/projects/get-fuel-app.php"> App Development </a>
-                                <a class="card-text2 link2" href="/pages/projects/get-fuel-app.php"> Show Project </a>
+                                <a class="card-text2 link1" href="/pages/projects/get-fuel-app.html"> App Development </a>
+                                <a class="card-text2 link2" href="/pages/projects/get-fuel-app.html"> Show Project </a>
                                 <div class="hidden-div">
                                 </div>
                             </div>
@@ -311,14 +403,14 @@
                     </div>
                     <div class="card mx-auto mb-4">
                         <div class="bg-image" data-mdb-ripple-color="light">
-                            <a href="/pages/projects/bmi-app.php"><img src="/public/img/projects/bmi-app.jpg" class="img-fluid" alt="BMI CALCULATOR APP" /></a>
+                            <a href="/pages/projects/bmi-app.html"><img src="/public/img/projects/bmi-app.jpg" class="img-fluid" alt="BMI CALCULATOR APP" /></a>
                         </div>
                         <div class="card-body text-center">
-                            <h5><a href="/pages/projects/bmi-app.php" class="card-title">BMI CALCULATOR APP</a> </h5>
+                            <h5><a href="/pages/projects/bmi-app.html" class="card-title">BMI CALCULATOR APP</a> </h5>
                             <p class="card-text">The BMI Calculator App is a simple tool that allows users to calculate their body mass index (BMI) and save it in Firebase</p>
                             <div class="overflow-hidden mb-1 mt-2">
-                                <a class="card-text2 link1" href="/pages/projects/bmi-app.php"> App Development </a>
-                                <a class="card-text2 link2" href="/pages/projects/bmi-app.php"> Show Project </a>
+                                <a class="card-text2 link1" href="/pages/projects/bmi-app.html"> App Development </a>
+                                <a class="card-text2 link2" href="/pages/projects/bmi-app.html"> Show Project </a>
                                 <div class="hidden-div">
                                 </div>
                             </div>
@@ -477,7 +569,62 @@
 
 
     <!-- Footer -->
-    <?php require 'pages/footer.php' ?>
+    <footer class="text-center text-lg-start bg-0 text-muted">
+        <section class="p-4 border-bottom border-gray-800">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h3 class=" fw-bold mb-4 text-white">#MSahirullah</h3>
+                    </div>
+                    <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                        <p><a href="/#home" class="text-reset">Home</a></p>
+                        <p><a href="/#about-me" class="text-reset">About Me</a></p>
+                        <p><a href="/#projets" class="text-reset">Projects</a></p>
+                        <p><a href="/#contact-me" class="text-reset">Contact Me</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <div class="text-secondary">
+                            <p>
+                                <i class="fas fa-envelope me-3 text-secondary"></i>
+                                msahirullah@gmail.com
+                            </p>
+                            <p>
+                                <i class="fas fa-phone me-3 text-secondary"></i>
+                                +94 77 2 155 122
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bg-1 section-2">
+            <section class="container d-flex justify-content-center justify-content-lg-between p-4 ">
+                <div class="me-5  d-none d-lg-block" style="background-color: rgba(0, 0, 0, 0.025);">
+                    Copyright © 2022 Mohomed Sahirullah | All rights reserved.
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/mohomed-sahirullah-3184b8141/" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/m.sahirullah" class="me-4 link-secondary footer-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/M_Sahirullah" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/m_sahirullah/" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/MSahirullah" class="me-4 link-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </footer>
 
     <!-- End Footer -->
     <script>
@@ -523,7 +670,7 @@
 
                 var subject = "Portfolio | Email from :" + email;
                 window.location.href = "mailto:msahirullah@gmail.com?subject=" + subject + "&body=" + msg + "";
-                // location.reload();
+                location.reload();
                 vanillaAlert(0, "Thank you! \nYour form submission has been received.");
                 $("#name", this).val("");
                 $("#email", this).val("");
