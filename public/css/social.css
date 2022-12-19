@@ -4,29 +4,35 @@
   transition: all 0.35s;
   transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
+
 .social-btns .btn:before {
   top: 90%;
   left: -110%;
 }
+
 .social-btns .btn i{
   transform: scale(0.8);
 }
+
 .social-btns .btn.facebook:before {
   background-color: #3b5998;
 }
+
 .social-btns .btn.facebook i{
   color: #3b5998;
 }
+
 .social-btns .btn.twitter:before {
   background-color: #3cf;
 }
+
 .social-btns .btn.twitter i{
   color: #3cf;
 }
 
 .social-btns .btn.linkedin:before {
     background: #007bb5;
-  }
+}
 
 .social-btns .btn.linkedin i{
 color: #007bb5;
@@ -34,10 +40,10 @@ color: #007bb5;
 
 .social-btns .btn.instagram:before {
     background: #8a3ab9;
-  }
+}
 
 .social-btns .btn.instagram  i{
-color: #8a3ab9;
+  color: #8a3ab9;
 }
 
 .social-btns .btn:focus:before,
@@ -45,6 +51,7 @@ color: #8a3ab9;
   top: -10%;
   left: -10%;
 }
+
 .social-btns .btn:focus .fa,
 .social-btns .btn:hover i{
   color: #fff;
@@ -65,6 +72,7 @@ color: #8a3ab9;
     box-shadow: 0 5px 15px -5px rgb(0 0 0 / 10%);
     opacity: 0.99;
 }
+
 .social-btns .btn:before {
   content: '';
   width: 150%;
@@ -72,6 +80,7 @@ color: #8a3ab9;
   position: absolute;
   transform: rotate(45deg);
 }
+
 .social-btns .btn i{
   font-size: 28px;
   vertical-align: middle;
