@@ -807,6 +807,16 @@ footer .text-reset:hover,
     font-size: 16px;
   }
 
+  .home-page .banner::before{
+    background: unset;
+  }
+
+  .home-page .ui-projects .ui-div:hover img{
+    filter: unset;
+    transition: all 0.3s ease;
+    transform: unset;
+  }
+
   .home-page .hip {
     padding-top: 3rem !important;
   }
@@ -937,9 +947,13 @@ footer .text-reset:hover,
     margin-bottom: 0.75rem;
   }
 
-  .home-page .projects .project-div .card:hover .link1,
+  .home-page .projects .project-div .card:hover .link1{
+    top: unset;
+    transition: 0.5s;
+  }
   .home-page .projects .project-div .card:hover .link2 {
-    all: unset !important;
+    top: unset;
+    transition: 0.5s;
   }
 
   .home-page .ui-projects .card-text2 {
