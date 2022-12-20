@@ -149,8 +149,8 @@ body,
   position: absolute;
   bottom: 0;
   right: 0;
-  background: url("public/img/home-bg-svg.svg") no-repeat 100% 100%;
-  z-index: -1;
+  background: url(../img/home-bg-svg.svg) no-repeat 100% 100%;
+  z-index: 0;
 }
 
 .banner {
@@ -379,7 +379,7 @@ p {
 }
 
 .contact-bg {
-  background-image: url("public/img/contact.jpg");
+  background-image: url("../img/contact.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -694,7 +694,7 @@ footer .text-reset:hover,
   right: 10px;
   height: 15px;
   width: 15px;
-  background: url(public/img/arrow.svg) no-repeat 100% 0;
+  background: url(../img/arrow.svg) no-repeat 100% 0;
 }
 
 .box-breadcrumbs .breadcrumb li a {
@@ -765,7 +765,7 @@ footer .text-reset:hover,
 }
 
 .loader {
-  background-image: url(public/img/loading.svg);
+  background-image: url(../img/loading.svg);
   height: 100px;
   width: 100px;
   background-size: contain;
