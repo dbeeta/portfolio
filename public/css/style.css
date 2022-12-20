@@ -301,7 +301,7 @@ body,
   background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea) var(--x, 0) /
     200%;
   color: #1a191d;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -387,7 +387,7 @@ p {
 
 .blur {
   background-color: rgba(255, 255, 255, 0.44) !important;
-  background: rgb(255 255 255 / 69%) !important;
+  background: rgb(255 255 255 / 80%) !important;
   border-radius: 10px !important;
   box-shadow: 0 4px 30px rgb(0 0 0 / 10%) !important;
   backdrop-filter: blur(7px) !important;
@@ -1004,8 +1004,22 @@ footer .text-reset:hover,
   .home-page .contact .intro .col-md-6 p {
     padding: 1rem !important;
   }
+  .home-page .small-text {
+    font-size: 15px !important;
+  }
+  .home-page .title-text {
+    font-size: 16px !important;
+  }
 
   .home-page .contact .contact-form-container {
+    width: 100%;
+  }
+
+  .home-page .blaze-svg{
+    position: absolute;
+    bottom: 0!important;
+    left: 0;
+    z-index: 1000;
     width: 100%;
   }
 
