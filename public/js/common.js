@@ -17,5 +17,5 @@ $(document).ready(function() {
    
     setTimeout(() => {
         $(".laoding-div").fadeOut();
-    }, 700);
+    }, 1000);
 });
